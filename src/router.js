@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+const Home = () => import('components/home/Home.vue')
+const Rank = () => import('components/rank/Rank.vue')
+const Singer = () => import('components/singer/Singer.vue')
+const Search = () => import('components/search/Search.vue')
+const Playlist = () => import('components/playlist/Playlist.vue')
+const SingerDetail = () => import('components/singer-detail/SingerDetail.vue')
 
 Vue.use(Router)
 
@@ -8,16 +13,55 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      redirect: '/home'
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/home',
+      name: 'home',
+      component: Home,
+      children: [
+        {
+          path: ':id',
+          name: 'playlist',
+          component: Playlist
+        }
+      ]
+    },
+    {
+      path: '/rank',
+      name: 'rank',
+      component: Rank,
+      children: [
+        {
+          path: ':id',
+          name: 'toplist',
+          component: Playlist
+        }
+      ]
+    },
+    {
+      path: '/singer',
+      name: 'singer',
+      component: Singer,
+      children: [
+        {
+          path: ':id',
+          name: 'singerDetail',
+          component: SingerDetail
+        }
+      ]
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: Search,
+      children: [
+        {
+          path: ':id',
+          name: 'searchDetail',
+          component: SingerDetail
+        }
+      ]
     }
   ]
 })

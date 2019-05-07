@@ -1,0 +1,10 @@
+@mixin bg($url){
+    background-image: url($url+'.png');
+    background-size: cover;
+    @media screen and (min-width: 360px){
+        background-image: url($url+'@2x.png')
+    }
+    @media screen and (min-width: 414px){
+        background-image: url($url+'@3x.png')
+    }
+}
