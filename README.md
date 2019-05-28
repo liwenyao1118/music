@@ -1,4 +1,4 @@
-# xyx
+# Vue(2.6) 仿安卓端网易云音乐
 
 ## Project setup
 ```
