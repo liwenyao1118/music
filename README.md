@@ -19,34 +19,34 @@ npm run serve
 ### 推荐页面、排行榜页面、歌手分类页面
 <table align="center">
     <tr>
-        <td><img src="./doc/tuijian.png" width="300"></td>
-        <td><img src="./doc/paihang.png" width="300"></td>
-        <td><img src="./doc/geshou.png" width="300"></td>
+        <td><img src="./doc/tuijian.png"></td>
+        <td><img src="./doc/paihang.png"></td>
+        <td><img src="./doc/geshou.png"></td>
     </tr>
 </table>
 
 ### 歌单详情页、歌手详情页
 <table align="center">
     <tr>
-        <td><img src="./doc/gedan.png" width="300"></td>
-        <td><img src="./doc/xiangqing.png" width="300"></td>
+        <td><img src="./doc/gedan.png"></td>
+        <td><img src="./doc/xiangqing.png"></td>
     </tr>
 </table>
 
 ### 播放页面、歌词页面、清空播放列表
 <table align="center">
     <tr>
-        <td><img src="./doc/bofang.png" width="300"></td>
-        <td><img src="./doc/geci.png" width="300"></td>
-        <td><img src="./doc/liebiao.png" width="300"></td>
+        <td><img src="./doc/bofang.png"></td>
+        <td><img src="./doc/geci.png"></td>
+        <td><img src="./doc/liebiao.png"></td>
     </tr>
 </table>
 
 ### 搜索页面、搜索结果
 <table align="center">
     <tr>
-        <td><img src="./doc/sousuo.png" width="300"></td>
-        <td><img src="./doc/jieguo.png" width="300"></td>
+        <td><img src="./doc/sousuo.png"></td>
+        <td><img src="./doc/jieguo.png"></td>
     </tr>
 </table>
 
